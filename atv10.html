@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var peso = Number(prompt("Informe o peso (em kg): "))
+        var altura = Number(prompt("Informe a altura (em metros): "))
+
+        var imc = (peso / (altura ** 2)).toFixed(2)
+
+        if (imc >= 25) {
+            alert(imc + ": Sobrepeso")
+        } else if (imc >= 18.5) {
+            alert(imc + ": Normal")
+        } else {
+            alert(imc + ": Magreza")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
